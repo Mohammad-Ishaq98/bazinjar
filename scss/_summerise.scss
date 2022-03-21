@@ -1,0 +1,26 @@
+@use 'base' as b;
+.summerise{
+  padding: 50px 0 94px 0;
+  border-bottom: 1px solid #e7e7e7;
+  background: #f9f9f9;
+  & .summerise_header{
+    margin-bottom: 67px;
+    & h2{
+
+    }
+  }
+  & .single_summerise{
+     & .summerise_txt{
+       h3{
+         margin: 28px 0;         
+        }
+        p{
+          font-size: 13px;
+          color: #838383;
+          line-height: 1.7;     
+          padding-left: 79px;
+          transform: translateX(-39.5px);
+        }
+      }
+  }
+}

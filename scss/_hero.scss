@@ -1,0 +1,32 @@
+@use 'base' as b;
+.hero{
+  background: center/cover;
+  & .hero_txt{
+    padding: 248px 0 148px 0;
+    & h1{
+      font-size: b.$h1-font-size;
+      color: b.$h1-color;
+      font-weight: b.$fnt-light;
+      line-height: 1.4;
+      span{
+        font-weight: b.$fnt-medium-bold;
+      }
+    }
+    & p{
+      font-size: 18px;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+    & .learn_more_btn{
+      margin-left: 50px;
+      background: b.$themeColor;
+    }
+    .phone_store{
+      margin-top: 69px;
+      p{
+        
+      }
+    }
+  }
+}

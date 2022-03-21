@@ -1,0 +1,63 @@
+@use 'base' as b;
+.gallery{
+  padding: 49px 0 110px 0;
+  & header{
+    margin-bottom: 58px;
+    & h2{
+      font-size: b.$h2-font-size;
+      color: #414042;
+    }
+  }
+  & .screenshot_wrapper{
+    position: relative;
+    overflow: hidden;
+    &:hover{
+      & .hover_section{
+        a{
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      &::before{
+        opacity: .5;
+        visibility: visible;
+      }
+    }
+    img{
+      width: 100%;
+    }
+    &::before{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: #000;
+      opacity: 0;
+      visibility: hidden;
+      @include b.transiction;
+    }
+    & .hover_section{
+      a{
+      position: absolute;
+      padding: 10px 15px;
+      background: #e6a0a0;
+      background: #e6a0a0;
+      visibility: none;
+      opacity: 0;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+     }
+    }
+  }
+  & .screenshot_p{
+    position: relative;
+    background: #000;
+    color: #4bcaff;
+    padding: 20px 0;
+    top: -8px;
+  }
+}

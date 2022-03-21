@@ -15,6 +15,11 @@ $(".close_btn").on("click", function () {
 	$(".sidebar_area").removeClass("sidebar_opend");
 	$(".body_overlay").removeClass("overlay_opened");
 });
+// data background
+$("[data-background]").each(function(){
+	$(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
+});
+
 // One Page Nav
 var top_offset = $('.header-area').height() - 10;
 $('.main-menu nav ul').onePageNav({

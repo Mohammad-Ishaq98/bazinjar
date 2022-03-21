@@ -1,4 +1,7 @@
+@use 'base' as b;
 .main_header{
+  background: #131e29;
+  border-bottom: 1px solid #495d72;
   & .logo{
     & a{
       & img{
@@ -11,13 +14,16 @@
     & ul{
       & li{
         display: inline-block;
-        margin: 0 2px;
+        margin-left: 34px;
         position: relative;
         & a{
           display: inline-block;
-          padding: 10px 2px;
-          color: #000;
-          font-size: 20px;
+          padding: 44px 0px;
+          color: #fff;
+          font-size: 13px;
+          font-family: 'droid_sansregular';
+          font-weight: normal;
+          font-style: normal;
          }
          &.has-dropdown{
           & a {
@@ -30,7 +36,7 @@
          }
          &:hover{
            & a{
-             color: purple;
+             color: b.$themeColor;
            }
            & .submenu{
              visibility: visible;
@@ -100,6 +106,32 @@
     &.sidebar_opend{
       right: 0;
     }
+    // .mean-container{
+    //   .mean-nav{
+    //     ul{
+    //       padding: 0;
+    //       margin: 0;
+    //       width: 100%;
+    //       list-style-type: none;
+    //       display: block !important;
+    //       li{
+    //         a{
+    //           &.meanmenu-reveal{
+    //             display: none !important;
+    //           }
+    //         }
+    //         .submenu{
+    //           //display: none ;
+    //         }         
+    //       }
+    //     }
+    //   }
+    //   padding: 0;
+    //   margin: 0;
+    //   width: 100%;
+    //   list-style-type: none;
+    //   display: block !important;
+    // }
     .close_btn{
       font-size: 45px;
     }
@@ -115,3 +147,20 @@
       margin-bottom: 10px;
     }
   }
+  .mean-container{
+    .mean-nav {
+      ul {  
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        list-style-type: none;
+        display: block !important;
+        li{
+          .submenu{
+            //display: none !important;
+          }
+        }
+      }
+    }
+  } 
+   
