@@ -1,0 +1,45 @@
+@use 'base' as b;
+.contact{
+  position: relative;
+  iframe{
+    width: 100%;
+  }
+  .form_wrapper{
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+     form{
+      background: #4bc9ffb6;
+      padding: 30px;
+      h3{
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      input{
+        border: none;
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 14px;
+        &::placeholder{
+          text-align: center;
+          color: #ddd;
+        }
+      }
+      textarea{
+        border: none;
+        width: 100%;
+        padding-top: 12px;
+        &::placeholder{
+          text-align: center;
+          color: #ddd;
+        }
+      }
+    }
+  }
+}
