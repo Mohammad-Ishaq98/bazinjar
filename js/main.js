@@ -9,11 +9,9 @@ $('.main_menu').meanmenu({
 //sidebar js
 $(".menu_bar").on("click", function () {
 	$(".sidebar_area").addClass("sidebar_opend");
-	$(".body_overlay").addClass("overlay_opened");
 });
 $(".close_btn").on("click", function () {
 	$(".sidebar_area").removeClass("sidebar_opend");
-	$(".body_overlay").removeClass("overlay_opened");
 });
 // data background
 $("[data-background]").each(function(){

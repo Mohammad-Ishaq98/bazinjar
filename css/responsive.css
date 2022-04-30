@@ -11,6 +11,9 @@
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
   .menu_bar{display: none;}
+  .main_header .main_menu nav ul li {
+    margin-left: 14px;
+}
 
 }
 
