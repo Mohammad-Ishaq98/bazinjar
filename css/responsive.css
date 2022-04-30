@@ -1,16 +1,25 @@
 /* Normal desktop :1200px. */
 @media (min-width: 1501px) and (max-width: 1800px) {
   .menu_bar{display: none;}
+  .nav_bar{
+    display: none;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
   .menu_bar{display: none;}
+  .nav_bar{
+    display: none;
+  }
 
 }
 
 
 /* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1200px) {
   .menu_bar{display: none;}
+  .nav_bar{
+    display: none;
+  }
   .main_header .main_menu nav ul li {
     margin-left: 14px;
 }
@@ -19,20 +28,216 @@
 
  
 /* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
-
-
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero .hero_txt {
+    padding: 148px 0 48px 0;
+  }
+  .hero .hero_txt h1 {
+    font-size: 30px;
+  }
+  .hero .hero_txt p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .summerise_header h2{
+    font-size: 26px;
+  }
+  .summerise .summerise_header {
+    margin-bottom: 37px;
+  }
+  .summerise .summerise_header p{
+    font-size: 14px;
+  }
+  .summerise .single_summerise .summerise_txt h3 {
+    margin: 17px 0;
+    font-size: 22px;
+  }
+  .summerise .single_summerise .summerise_txt p {
+    font-size: 12px;
+  }
+  .gallery .screenshot_wrapper::before {
+    position: static;
+  }
+  .gallery .screenshot_wrapper .hover_section a {
+    position: static;
+  }
+  .hover_section{
+    display: block;
+    margin: 45px 0;
+    width: 100%;
+  }
+  .gallery .screenshot_wrapper .hover_section a {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+  }
+  button {
+    padding: 15px 10px;
+  }
+  .gallery header h2 {
+    font-size: 26px;
+  }
+  .gallery header p{
+    font-size: 12px;
+  }
+  .gallery .screenshot_p {
+    font-size: 14px;
+  }
+  .gallery_txt p{
+    font-size: 14px;
+  }
+  .tech_txt h2{
+    font-size: 26px;
+  }
+  .technology .tech_txt p {
+    font-size: 14px;
+  }
+  .price {
+    padding: 30px 0;
+  }
+  .price .header_txt h3{
+    font-size: 22px;
+  }
+  .price .header_txt p{
+    font-size: 14px;
+  }
+  .price .price_section .price_box {
+    padding: 20px 0;
+  }
+  .price .price_section .price_box .price_head {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  .price_value h2{
+    font-size: 26px;
+  }
+  .price .price_section .price_box .service_lsit {
+    margin-top: 12px;
+  }
+  .price .price_section .price_box .service_lsit ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .testimonial p, .testimonial i {
+    font-size: 15px;
+  }
+  .app .app_txt p {
+    font-size: 35px;
+  }
+  .footer_left p {
+    font-size: 12px;
+  }
+  .footer_right p{
+    font-size: 12px;
+  }
 }
 
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-
- 
+  .sidebar_area {
+    width: 265px;
+  }
+  .hero .hero_txt {
+    padding: 148px 0 48px 0;
+  }
+  .hero .hero_txt h1 {
+    font-size: 30px;
+  }
+  .hero .hero_txt p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .hero .hero_txt .learn_more_btn {
+    margin-left: 20px;
+  }
+  .hover_section{
+    display: block;
+    margin: 45px 0;
+    width: 100%;
+  }
+  .gallery .screenshot_wrapper .hover_section a {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+  }
+  .summerise_header h2{
+    font-size: 26px;
+  }
+  .summerise .summerise_header {
+    margin-bottom: 37px;
+  }
+  .summerise .summerise_header p{
+    font-size: 14px;
+  }
+  .summerise .single_summerise .summerise_txt h3 {
+    margin: 17px 0;
+    font-size: 22px;
+  }
+  .summerise .single_summerise .summerise_txt p {
+    font-size: 12px;
+  }
+  button {
+    padding: 15px 10px;
+  }
+  .gallery header h2 {
+    font-size: 26px;
+  }
+  .gallery header p{
+    font-size: 12px;
+  }
+  .gallery .screenshot_p {
+    font-size: 14px;
+  }
+  .gallery_txt p{
+    font-size: 14px;
+  }
+  .tech_txt h2{
+    font-size: 26px;
+  }
+  .technology .tech_txt p {
+    font-size: 14px;
+  }
+  .price {
+    padding: 30px 0;
+  }
+  .price .header_txt h3{
+    font-size: 22px;
+  }
+  .price .header_txt p{
+    font-size: 14px;
+  }
+  .price .price_section .price_box {
+    padding: 20px 0;
+  }
+  .price .price_section .price_box .price_head {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  .price_value h2{
+    font-size: 26px;
+  }
+  .price .price_section .price_box .service_lsit {
+    margin-top: 12px;
+  }
+  .price .price_section .price_box .service_lsit ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .testimonial p, .testimonial i {
+    font-size: 15px;
+  }
+  .app .app_txt p {
+    font-size: 35px;
+  }
+  .footer_left p {
+    font-size: 12px;
+  }
+  .footer_right p{
+    font-size: 12px;
+  }
 }
- 
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
- 
-}
+ }
